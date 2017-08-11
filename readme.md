@@ -4,15 +4,16 @@ Use the awesome Ant components library if you can't find what you need here :
 * https://ant.design/docs/react/introduce
 * https://mobile.ant.design/docs/react/introduce
 
-# TODOS
-* add avatar-uploader (constrained or not)
-* add alert (toast and slide)
-
 # Installation
 ```bash
 yarn add @micabe/components --ignore-scripts
 or
 npm install @micabe/components --ignore-scripts
+```
+
+# Running the Storybook
+```bash
+yarn start
 ```
 
 ### Get the modules!
