@@ -1,0 +1,74 @@
+@import '../../sass/variables';
+
+.dropdown {
+  display: inline-block;
+  min-width: 200px;
+  margin-left: 1.6rem;
+  cursor: pointer;
+  .dropdown-label {
+    font-size: 20px;
+    position: relative;
+    width: 100%;
+    text-align: left;
+    &::after {
+      display: inline-block;
+      position: absolute;
+      right: 10px;
+      top: 41%;
+      width: 0;
+      height: 0;
+      margin-left: 0.3em;
+      vertical-align: middle;
+      content: "";
+      border-top: 0.3em solid;
+      border-right: 0.3em solid transparent;
+      border-left: 0.3em solid transparent;
+    }
+  }
+  .dropdown-menu {
+    width: 100%;
+    z-index: 1000;
+    display: none;
+    font-size: 0.625rem;
+    padding: 0;
+    color: $dark-grey;
+    text-align: left;
+    list-style: none;
+    background-color: white;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 0;
+    &.show {
+      display: block;
+    }
+    li:last-child {
+      a, span {
+        border-bottom: none;
+      }
+    }
+    a, span {
+      display: block;
+      width: 100%;
+      padding: 4px 20px;
+      clear: both;
+      font-weight: 400;
+      color: $dark-grey;
+      text-align: inherit;
+      background: 0 0;
+      text-decoration: none;
+      border-bottom: 1px solid $lighter-grey;
+      cursor: pointer;
+      font-size: (13/16) + rem;
+      i {
+        margin-right: 6px;
+      }
+      &:hover {
+        background-color: #ddd;
+      }
+      &.active {
+        background: darken($brand-info, 10%);
+        color: #FFF;
+      }
+    }
+  }
+}

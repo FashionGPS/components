@@ -1,0 +1,118 @@
+{
+  "name": "@micabe/components",
+  "version": "0.0.22",
+  "description": "A set of React widgets & components",
+  "main": "lib/index.js",
+  "author": "Mickael Abensur <armouredorange@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "precommit": "$(npm bin)/lint-staged",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run deploy",
+    "lint": "$(npm bin)/eslint src",
+    "prettier": "$(npm bin)/prettier-standard \"src/**/*.js\"",
+    "dev": "start-storybook -c ./src/.storybook -p 6006",
+    "build-lib": "rm -rf lib && $(npm bin)/babel -d lib src",
+    "deploy": "now && now alias"
+  },
+  "lint-staged": {
+    "./**/*.js": [
+      "npm run lint",
+      "npm run prettier",
+      "git add"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/micabe/components"
+  },
+  "homepage": "https://www.npmjs.com/package/@micabe/components",
+  "keywords": [
+    "react",
+    "storybook",
+    "theme",
+    "component",
+    "widget"
+  ],
+  "devDependencies": {
+    "@storybook/addon-actions": "^3.2.0",
+    "@storybook/addon-info": "^3.2.0",
+    "@storybook/addon-knobs": "^3.2.0",
+    "@storybook/react": "^3.2.3",
+    "autoprefixer-loader": "^3.2.0",
+    "babel-cli": "^6.24.0",
+    "babel-eslint": "^7.2.1",
+    "babel-plugin-transform-class-properties": "^6.23.0",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-preset-env": "^1.3.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.23.0",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-config-standard": "^7.1.0",
+    "eslint-config-standard-react": "^4.3.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-react": "^6.10.3",
+    "eslint-plugin-standard": "^2.1.1",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "file-loader": "^0.11.2",
+    "husky": "^0.13.3",
+    "json-loader": "^0.5.7",
+    "lint-staged": "^3.4.0",
+    "next": "^2.4.9",
+    "node-sass": "^4.5.3",
+    "prettier-standard": "^2.0.2",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-hot-loader": "3.0.0-beta.7",
+    "sass-loader": "^6.0.6",
+    "storybook-addon-jsx": "^4.1.1",
+    "webpack": "^3.4.1",
+    "webpack-combine-loaders": "^2.0.3"
+  },
+  "now": {
+    "alias": "components"
+  },
+  "dependencies": {
+    "autobind-decorator": "^2.1.0",
+    "color": "^1.0.3",
+    "cuid": "^1.3.8",
+    "ease-component": "^1.0.0",
+    "es6-promise": "^4.1.1",
+    "lodash": "^4.17.4",
+    "prop-types": "^15.5.3",
+    "react-click-outside": "^2.3.1",
+    "react-dropzone": "^4.0.0",
+    "react-flex-carousel": "^0.2.0",
+    "react-infinite-scroll-component": "^2.4.0",
+    "react-uikit-base": "^2.0.2",
+    "rheostat": "^2.1.1",
+    "scroll": "^2.0.0",
+    "serve": "^6.0.6",
+    "styled-jsx": "^0.5.7"
+  },
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "browsers": [
+              "last 2 versions",
+              "> 1%"
+            ]
+          }
+        }
+      ],
+      "react"
+    ],
+    "plugins": [
+      "transform-class-properties",
+      "transform-object-rest-spread",
+      "styled-jsx/babel"
+    ]
+  }
+}

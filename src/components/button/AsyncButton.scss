@@ -1,0 +1,49 @@
+@import '../../sass/variables';
+@import '../../sass/helpers';
+
+.async-btn {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 20px;
+  &--secondary {
+    color: $async-btn-color;
+    background-color: white;
+    border-color: $async-btn-color;
+  }
+  &--primary {
+    color: white;
+    background-color: $async-btn-color;
+    border-color: $async-btn-color;
+  }
+  .bell {
+    vertical-align: sub;
+    fill: $light-grey;
+  }
+  &:disabled {
+    background-color: grey;
+    border-color: #ddd;
+  }
+  &.success-btn {
+    position: relative;
+    overflow: hidden;
+    .fill {
+      position: absolute;
+      display: inline-block;
+      left: 50%;
+      top: 50%;
+      margin-left: -4px;
+      margin-top: -4px;
+      width: 8px;
+      height: 8px;
+      border-radius: 100%;
+      background-color: $brand-success;
+      z-index: 1;
+      animation: fill 1s 1 ease-out both;
+    }
+    .success-btn-label {
+      position: relative;
+      z-index: 2;
+    }
+  }
+}
