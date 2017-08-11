@@ -1,9 +1,3 @@
-# Description
-Basic UX React Components
-Use the awesome Ant components library if you can't find what you need here :
-* https://ant.design/docs/react/introduce
-* https://mobile.ant.design/docs/react/introduce
-
 # Installation
 ```bash
 yarn add @micabe/components --ignore-scripts
