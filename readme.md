@@ -1,12 +1,13 @@
-# Installation
+<!-- # Installation
 ```bash
 yarn add @micabe/components --ignore-scripts
 or
 npm install @micabe/components --ignore-scripts
-```
+``` -->
 
 # Running the Storybook
 ```bash
+yarn install --ignore-scripts
 yarn start
 ```
 
