@@ -1,6 +1,6 @@
 {
   "name": "@micabe/components",
-  "version": "0.0.22",
+  "version": "0.0.23",
   "description": "A set of React widgets & components",
   "main": "lib/index.js",
   "author": "Mickael Abensur <armouredorange@gmail.com>",
@@ -86,7 +86,7 @@
     "lodash": "^4.17.4",
     "prop-types": "^15.5.3",
     "react-click-outside": "^2.3.1",
-    "react-dropzone": "^4.0.0",
+    "react-dropzone": "micabe/react-dropzone#3f563db",
     "react-flex-carousel": "^0.2.0",
     "react-infinite-scroll-component": "^2.4.0",
     "react-uikit-base": "^2.0.2",
