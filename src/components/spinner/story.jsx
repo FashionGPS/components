@@ -3,7 +3,7 @@ import { withInfo } from '@storybook/addon-info'
 import { storiesOf } from '@storybook/react'
 import { CanvasSpinner } from './Canvas'
 import { CssSpinner } from './Css'
-import './_Css.scss'
+import './Spinner.scss'
 
 storiesOf('Spinners')
   .add(
