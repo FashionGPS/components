@@ -1,5 +1,4 @@
 import React from 'react'
-import { withInfo } from '@storybook/addon-info'
 import scroll from 'scroll'
 import _ from 'lodash'
 import ease from 'ease-component'

@@ -1,5 +1,4 @@
 import React from 'react'
-import { withInfo } from '@storybook/addon-info'
 import autobind from 'autobind-decorator'
 import ActionBar from '../action-bar/ActionBar'
 

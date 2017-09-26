@@ -1,6 +1,5 @@
 import Infinite from 'react-infinite-scroll-component'
 import React from 'react'
-import { withInfo } from '@storybook/addon-info'
 import _ from 'lodash'
 import cn from 'classnames'
 import moment from 'moment'

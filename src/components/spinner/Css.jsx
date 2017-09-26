@@ -1,5 +1,4 @@
 import React from 'react'
-import { withInfo } from '@storybook/addon-info'
 
 export const CssSpinner = ({ type }) => (
   {

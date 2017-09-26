@@ -1,5 +1,4 @@
 import React from 'react'
-import { withInfo } from '@storybook/addon-info'
 import Dropzone from 'react-dropzone'
 import cn from 'classnames'
 import autobind from 'autobind-decorator'

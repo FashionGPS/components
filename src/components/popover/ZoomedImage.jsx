@@ -1,5 +1,4 @@
 import React from 'react'
-import { withInfo } from '@storybook/addon-info'
 import PropTypes from 'prop-types'
 import Portal from './_portal'
 

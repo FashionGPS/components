@@ -1,5 +1,4 @@
 import React from 'react'
-import { withInfo } from '@storybook/addon-info'
 import ReactDOM, { findDOMNode } from 'react-dom'
 import PropTypes from 'prop-types'
 

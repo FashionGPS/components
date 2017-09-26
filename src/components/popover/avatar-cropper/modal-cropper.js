@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import { withInfo } from '@storybook/addon-info'
 import _ from 'lodash'
 import Cropper from './avatar-cropper'
 

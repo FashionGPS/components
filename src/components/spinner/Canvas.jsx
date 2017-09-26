@@ -1,5 +1,4 @@
 import React from 'react'
-import { withInfo } from '@storybook/addon-info'
 
 const STEP = 0.1
 const ROTATION_STEP = (3 * Math.PI) / 180
