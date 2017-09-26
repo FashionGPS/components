@@ -1,13 +1,13 @@
 {
   "name": "@micabe/components",
-  "version": "0.0.25",
+  "version": "0.1.0",
   "description": "A set of React widgets & components",
   "main": "lib/index.js",
   "author": "Mickael Abensur <armouredorange@gmail.com>",
   "license": "MIT",
   "scripts": {
     "precommit": "$(npm bin)/lint-staged",
-    "prepare": "npm run build",
+    "prepublishOnly": "npm run build",
     "lint": "$(npm bin)/eslint src",
     "prettier": "$(npm bin)/prettier-standard \"src/**/*.js\"",
     "dev": "start-storybook -c ./src/.storybook -p 6006",
@@ -34,6 +34,9 @@
     "component",
     "widget"
   ],
+  "now": {
+    "alias": "components"
+  },
   "devDependencies": {
     "@storybook/addon-actions": "^3.2.10",
     "@storybook/addon-info": "^3.2.10",
@@ -54,7 +57,6 @@
     "eslint-config-standard-react": "^5.0.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^6.0.2",
-    "eslint-plugin-node": "^5.1.1",
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-react": "^7.4.0",
     "eslint-plugin-standard": "^3.0.1",
@@ -73,9 +75,6 @@
     "storybook-addon-jsx": "^4.1.1",
     "webpack": "^3.6.0",
     "webpack-combine-loaders": "^2.0.3"
-  },
-  "now": {
-    "alias": "components"
   },
   "dependencies": {
     "autobind-decorator": "^2.1.0",
