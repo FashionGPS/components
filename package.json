@@ -13,7 +13,7 @@
     "prettier": "$(npm bin)/prettier-standard \"src/**/*.js\"",
     "dev": "start-storybook -c ./src/.storybook -p 6006",
     "start": "npm rebuild node-sass && yarn dev",
-    "build-lib": "rm -rf lib && $(npm bin)/babel -d lib src",
+    "build": "rm -rf lib && $(npm bin)/babel -d lib src",
     "deploy": "now && now alias"
   },
   "lint-staged": {
