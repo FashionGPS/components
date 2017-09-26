@@ -8,7 +8,6 @@
   "scripts": {
     "precommit": "$(npm bin)/lint-staged",
     "prepare": "npm run build",
-    "prepublishOnly": "npm run deploy",
     "lint": "$(npm bin)/eslint src",
     "prettier": "$(npm bin)/prettier-standard \"src/**/*.js\"",
     "dev": "start-storybook -c ./src/.storybook -p 6006",
