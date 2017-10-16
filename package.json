@@ -7,12 +7,15 @@
   "license": "MIT",
   "scripts": {
     "precommit": "$(npm bin)/lint-staged",
-    "prepublishOnly": "npm run build",
+    "prepare": "npm run build && npm run copy:vars && npm run copy:styles && npm run copy:avatar",
     "lint": "$(npm bin)/eslint src",
     "prettier": "$(npm bin)/prettier-standard \"src/**/*.js\"",
     "dev": "start-storybook -c ./src/.storybook -p 6006",
     "start": "npm rebuild node-sass && yarn dev",
     "build": "rm -rf lib && $(npm bin)/babel -d lib src",
+    "copy:vars": "$(npm bin)/copyfiles -f ./src/sass/*.scss sass",
+    "copy:styles": "$(npm bin)/copyfiles -f ./src/components/*/**.scss lib/styles",
+    "copy:avatar": "$(npm bin)/copyfiles -f ./src/components/popover/avatar-cropper/*.scss lib/styles/avatar-cropper",
     "deploy": "now && now alias"
   },
   "lint-staged": {
