@@ -7,7 +7,6 @@
   "license": "MIT",
   "scripts": {
     "precommit": "$(npm bin)/lint-staged",
-    "prepare": "npm run build && npm run copy:vars && npm run copy:styles && npm run copy:avatar",
     "lint": "$(npm bin)/eslint src",
     "prettier": "$(npm bin)/prettier-standard \"src/**/*.js\"",
     "dev": "start-storybook -c ./src/.storybook -p 6006",
