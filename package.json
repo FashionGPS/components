@@ -1,5 +1,5 @@
 {
-  "name": "@micabe/components",
+  "name": "@FashionGPS/components",
   "version": "0.2.2",
   "description": "A set of React widgets & components",
   "main": "lib/index.js",
@@ -117,5 +117,8 @@
       "transform-object-rest-spread",
       "styled-jsx/babel"
     ]
+  },
+  "dependencies": {
+    "create-react-class": "^15.6.3"
   }
 }

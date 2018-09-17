@@ -1,9 +1,10 @@
 import PropTypes from 'prop-types'
 import React from 'react'
+import createClass from 'create-react-class'
 import _ from 'lodash'
 import Cropper from './avatar-cropper'
 
-export default React.createClass({
+export default createClass({
   propTypes: {
     file: PropTypes.object.isRequired,
     image: PropTypes.string.isRequired,
