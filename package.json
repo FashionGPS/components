@@ -1,5 +1,5 @@
 {
-  "name": "@FashionGPS/components",
+  "name": "@fashiongps/components",
   "version": "0.2.3",
   "description": "A set of React widgets & components",
   "main": "lib/index.js",
@@ -118,6 +118,5 @@
   "dependencies": {
     "create-react-class": "^15.6.3",
     "styled-jsx": "^3.0.2"
-  },
-  "private": false
+  }
 }
