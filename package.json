@@ -3,7 +3,7 @@
   "version": "0.2.3",
   "description": "A set of React widgets & components",
   "main": "lib/index.js",
-  "author": "Mickael Abensur <armouredorange@gmail.com>",
+  "author": "benjamin.gelis@launchmetrics.com",
   "license": "MIT",
   "scripts": {
     "precommit": "$(npm bin)/lint-staged",
@@ -25,10 +25,7 @@
       "git add"
     ]
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/micabe/components"
-  },
+  "repository": "http://github.com/FashionGPS/components",
   "homepage": "https://www.npmjs.com/package/@micabe/components",
   "keywords": [
     "react",
@@ -120,5 +117,6 @@
   },
   "dependencies": {
     "create-react-class": "^15.6.3"
-  }
+  },
+  "private": false
 }
