@@ -1,6 +1,6 @@
 {
   "name": "@fashiongps/components",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "A set of React widgets & components",
   "main": "lib/index.js",
   "author": "benjamin.gelis@launchmetrics.com",
