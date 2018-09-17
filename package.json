@@ -116,7 +116,8 @@
     ]
   },
   "dependencies": {
-    "create-react-class": "^15.6.3"
+    "create-react-class": "^15.6.3",
+    "styled-jsx": "^3.0.2"
   },
   "private": false
 }
